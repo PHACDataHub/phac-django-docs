@@ -18,9 +18,8 @@
 This command is probably not necessary, but it will allow you to run "admin" commands without having to use `-U postgres` in front of everything.
 `psql -U postgres -c "CREATE ROLE \"YOUR_UPPERCASE_USERNAME\" WITH LOGIN SUPERUSER"`
 
-If you ran 4, you don't need the `-U postgres` in front of everything. Of course, if something goes wrong, see if adding `-U postgres` can fix it
 
-Project specific: 
+Here's what you'd run in a typical project to create a project-specific user and DB. In this case the username is `phacend` and the db name is `phac_dev`
 1. psql -U postgres -c "CREATE ROLE phacend with login"
 2. psql -U postgres -c "ALTER ROLE phacend createdb"
 3. createdb -U phacend phac_dev
