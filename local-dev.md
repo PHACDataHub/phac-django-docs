@@ -20,7 +20,7 @@ This command is probably not necessary, but it will allow you to run "admin" com
 
 
 Here's what you'd run in a typical project to create a project-specific user and DB. In this case the username is `phacend` and the db name is `phac_dev`
-1. psql -U postgres -c "CREATE ROLE phacend with login"
+1. psql -U postgres -c "CREATE ROLE phacend with login superuser"
 2. psql -U postgres -c "ALTER ROLE phacend createdb"
 3. createdb -U phacend phac_dev
 
