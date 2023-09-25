@@ -3,9 +3,10 @@
 This a repo of docs for django projects. 
 
 
-1. [conventions/advice for building and coding](conventions.md)
-2. [Typical structure of a project](code-structure.md)
-3. [Configuring local-development environments](local-dev.md)
+1. [Github workflow](git-workflow.md)
+2. [conventions/advice for building and coding](conventions.md)
+3. [Typical structure of a project](code-structure.md)
+4. [Configuring local-development environments](local-dev.md)
 
 
 ## documentation TODOs:

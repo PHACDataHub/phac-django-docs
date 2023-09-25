@@ -139,5 +139,5 @@ If there are models used by multiple different projects, e.g. PHACOrgs and Locat
 
 Django docs hint that you may want multiple apps but that can make it difficult to refactor and it turns migration dependencies into a _graph_, rather than a _line_. This graph should _never_ contain cycles or cirular dependency (e.g. foreign keys point both ways between apps). This is a sign it should have been a single app.
 
-If your project is literally a combination of multiple projects (e.g. catalog and catalog-referencing indicaotrs), it may also make sense to split those into 2 apps and have the one refer on the other.
+If your project is literally a combination of multiple projects (e.g. catalog and catalog-referencing indicators), it may also make sense to split those into 2 apps and have the one refer on the other.
 
