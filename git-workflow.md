@@ -2,6 +2,8 @@
 
 **Always merge PRs via squash-and-merge**
 
+When it's time to merge your PR, always select "squash and merge". Github will auto-generate a PR description for you based on commmit messages, but we ask that you filter out the commit messages for intermediate steps. e.g "integrated feedback from comments" or "lint code".
+
 ## Writing good pull requests 
 
 **Keep it small! One single change**
