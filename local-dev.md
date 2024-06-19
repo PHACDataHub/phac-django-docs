@@ -1,6 +1,6 @@
 # Conventions for local development environment
 
-- We use python 3.10
+- We use python 3.11
     - we'll have to upgrade eventually but we'll want to coordinate with other projects
 - We use virtualenv, not conda, pipenv, poetry, pdm, etc. 
 - The root of the repo should be the one opened in vscode 
