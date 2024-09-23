@@ -13,7 +13,7 @@
 1. download windows binaries: https://www.enterprisedb.com/download-postgresql-binaries (tested with v15)
 2. extract to `C:\Users\{username}\AppData\Roaming\`
 2. add path 
-3. initdb -D ~/pg/data/ -U postgres -E utf8
+3. initdb -D -U postgres -E utf8 ~/pg/data/
 
 This command is probably not necessary, but it will allow you to run "admin" commands without having to use `-U postgres` in front of everything.
 `psql -U postgres -c "CREATE ROLE \"YOUR_UPPERCASE_USERNAME\" WITH LOGIN SUPERUSER"`
