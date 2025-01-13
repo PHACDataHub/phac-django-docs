@@ -7,6 +7,7 @@ This a repo of docs for django projects.
 2. [conventions/advice for building and coding](conventions.md)
 3. [Typical structure of a project](code-structure.md)
 4. [Configuring local-development environments](local-dev.md)
+4. [Guide to Redundant/N+1 SQL queries](n_plus_one_guide.md)
 
 
 ## documentation TODOs:
