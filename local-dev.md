@@ -1,12 +1,36 @@
-# Conventions for local development environment
+## Conventions for local development environment
 
-- We use python 3.11
-    - we'll have to upgrade eventually but we'll want to coordinate with other projects
 - We use virtualenv, not conda, pipenv, poetry, pdm, etc. 
 - The root of the repo should be the one opened in vscode 
 - The root of the repo should contain the pyproject.toml
 - The root of the repo should contain the virtual environment
 - The virtual environment should be called venv/
+
+## Installing python
+
+We're currently on python3.13 [Python Release Python 3.13.14 | Python.org](https://www.python.org/downloads/release/python-31314/)
+
+pick the 64 bit installer
+
+Using the installer, 
+1. first screen: "Install Python 3.13.x (64-bit)"  
+	- uncheck 'use admin rights' at the bottom
+	- click customize installation
+2. Second screen
+	- make sure pip is checked
+	- the others can be left unchecked
+3. Third screen: Advanced Options
+	- Can leave everything unchecked
+	- **important:** Use a shorter path: `C:\Users\<MYUSERNAME>\Python313`
+4. install virtualenv
+	- `~/python313/python -m pip install virtualenv`
+
+Global setup is now complete. Note that your basic `python` command won't be updated, you'll need to refer to the entire path. This may be annoying for data-science, but it's not a concern for development because we use virtualenvs for everything.
+
+To create a virtualenv env in your project folder, you can create virtualenvs via `~/python313/python -m venv ./venv/`
+Remember to completely delete any older virtualenvs 
+
+If you need multiple versions of python (likely, because we can't upgrade all projects simultaneously), ideally this process did not mess with the old installation. Even if it did, it probably didn't break older virtual envs. But even if it breaks those, you can follow this same process to re-install the old python version and use that to re-create older venvs.
 
 ## installing and using postgres w/out sci-ops on windows:
 
